@@ -33,7 +33,7 @@
                         <configuration>
                             <!--配置生成哪种语言的代码[java,scala]-->
                             <language>java</language>
-                            <sourceFilePath>src/main/resources/thrifts/</sourceFilePath>
+                            <sourceFilePath>src/main/resources/thrift/</sourceFilePath>
                             <targetFilePath>target/generated-sources/main/</targetFilePath>
                         </configuration>
                     </execution>

@@ -3,7 +3,6 @@ package com.dapeng.example.service;
 import com.dapeng.example.hello.domain.Hello;
 import com.dapeng.example.hello.service.HelloService;
 import com.github.dapeng.core.SoaException;
-import com.github.dapeng.spring.annotation.DapengService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
