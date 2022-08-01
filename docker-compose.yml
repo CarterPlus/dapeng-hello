@@ -11,9 +11,9 @@ services:
 
   helloService:
     container_name: helloService
-    image: docker.dapeng.example/hello-service:1.0-SNAPSHOT
+    image: carterhub/hello-service:v1.0
     volumes:
-      - "/data/logs/dapeng/hello-service:/dapeng-container/logs"
+      - "$HOME/data/logs/dapeng/hello-service:/dapeng-container/logs"
     environment:
       - soa_monitor_enable=false
       - soa_transactional_enable=false
@@ -21,8 +21,8 @@ services:
       - LANG=zh_CN.UTF-8
       - TZ=CST-8
       - soa_container_port=9696
-      - soa_container_ip=#host_ip
-      - soa_zookeeper_host=#host_ip:2181
+      - soa_container_ip=127.0.0.1
+      - soa_zookeeper_host=127.0.0.1:2181
     ports:
       - "9696:9696"
     labels:
